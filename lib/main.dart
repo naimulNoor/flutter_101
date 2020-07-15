@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'PlaceDetails.dart';
+
 void main(){
-  runApp(MyFlutterApp());
+  runApp(PleaceDetails());
 }
 
 class MyFlutterApp extends StatelessWidget {
