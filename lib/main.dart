@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'PlaceDetails.dart';
 
 void main(){
@@ -33,24 +32,20 @@ class MyFlutterApp extends StatelessWidget {
                 textAlign: TextAlign.center,
                 ),
                 Text('Software Engineer',style: TextStyle(fontSize: 20.0,color: Colors.redAccent,),
-                  textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
                 ),
                 Text('Works at Infolink LTD',style: TextStyle(fontSize: 20.0,color: Colors.redAccent,),
-                  textAlign: TextAlign.center,
+                textAlign: TextAlign.center,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Padding(
                         padding: EdgeInsets.all(20.0),
-                          child: Icon(Icons.call,color: Colors.blue,)),
-                    Text('call me',style: TextStyle(fontSize: 20.0,color: Colors.redAccent,),
-                                 textAlign: TextAlign.center,
-                    ),
+                        child: Icon(Icons.call,color: Colors.blue,)),
+                    Text('call me',style: TextStyle(fontSize: 20.0,color: Colors.redAccent,), textAlign: TextAlign.center,),
                   ],
-
                 )
-
               ],
             ),
           ),
