@@ -14,7 +14,7 @@ class PleaceDetails extends StatelessWidget{
           ),
             body: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
+              children: <Widget>[     
 
                //load image
                 Image.network("https://skmahdi.files.wordpress.com/2014/01/nafakum-03-mohammad-roohul-kaiser.jpg?w=720&h=450&crop=1"),
