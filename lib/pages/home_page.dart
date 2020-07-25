@@ -18,8 +18,7 @@ class _HomePageState extends State<HomePage> {
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.add),
-              onPressed: ()=>Navigator.push(context, MaterialPageRoute(
-                builder: (context)=>NewProductPage())
+                onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>NewProductPage())
               ).then((_) => (){
                 setState(() {
 

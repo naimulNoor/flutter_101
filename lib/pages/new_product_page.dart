@@ -126,8 +126,6 @@ class _NewProductPageState extends State<NewProductPage> {
                   child: Text("Save Product",style: TextStyle(color: Colors.white),),
                 )
 
-
-
               ],
             ),
           ),
@@ -180,6 +178,12 @@ class _NewProductPageState extends State<NewProductPage> {
     if(formkey.currentState.validate()){
         formkey.currentState.save();
           print(product);
+          if(date==null){
+            return;
+          }
+          if(imgPath==null){
+            return;
+          }
           DBSQLITE.productlist.add(product);
           Navigator.pop(context);
     }
