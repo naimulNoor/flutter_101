@@ -13,7 +13,6 @@ class Product{
   String category;
   String date;
   String imagePath;
-  int stockCount;
 
   Map<String,dynamic> toMap(){
     var map= <String,dynamic>{
@@ -39,11 +38,11 @@ class Product{
 
   }
 
-  Product({this.name, this.price, this.category, this.date, this.imagePath, this.stockCount});
+  Product({this.name, this.price, this.category, this.date, this.imagePath});
 
   @override
   String toString() {
-    return 'Product{id: $id, name: $name, price: $price, category: $category, date: $date, imagePath: $imagePath, stockCount: $stockCount}';
+    return 'Product{id: $id, name: $name, price: $price, category: $category, date: $date, imagePath: $imagePath}';
   }
 
 
