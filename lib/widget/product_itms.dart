@@ -18,7 +18,7 @@ class _ProductItemState extends State<ProductItem> {
   @override
   Widget build(BuildContext context) {
     return Dismissible(
-      key: ValueKey(widget.product.id),
+      key: UniqueKey(),
       direction: DismissDirection.endToStart,
       background: Container(
         color: Colors.redAccent,
