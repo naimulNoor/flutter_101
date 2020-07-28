@@ -40,4 +40,11 @@ class DBSQLITE{
     });
   }
 
+  static Future<int> deleteProduct(id) async{
+    final db=await open();
+   return db.delete(TABLE_PRODUCT,where: '$COL_PRODUCT_ID=?',whereArgs: [id]);
+
+  }
+
+
 }

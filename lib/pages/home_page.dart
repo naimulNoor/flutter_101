@@ -6,11 +6,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
+
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
+
+  void _refresh(){
+    setState(() {
+
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 childAspectRatio: 0.7,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
-                children: snapshot.data.map((product) => ProductItem(product)).toList()),
+                children: snapshot.data.map((product) => ProductItem(product,_refresh)).toList()),
           );
         }
         else if(snapshot.hasError){
