@@ -45,6 +45,16 @@ class DBSQLITE{
     });
   }
 
+  static Future<Product> getProductsbyId(id) async{
+    final db=await open();
+    db.query(TABLE_PRODUCT);
+    //raw query
+    final List<Map<String,dynamic>> productMap=await db.query(TABLE_PRODUCT,where: '$COL_PRODUCT_ID=?',whereArgs: [id]);
+    if(productMap.length>0){
+      return Product.fromMap(productMap.first);
+    }
+  }
+
   static Future<int> deleteProduct(id) async{
     final db=await open();
    return db.delete(TABLE_PRODUCT,where: '$COL_PRODUCT_ID=?',whereArgs: [id]);
