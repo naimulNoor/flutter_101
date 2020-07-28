@@ -5,6 +5,7 @@ final String COL_PRODUCT_PRICE='pro_price';
 final String COL_PRODUCT_CATEGORY='pro_category';
 final String COL_PRODUCT_DATE='pro_date';
 final String COL_PRODUCT_IMAGE='pro_image';
+final String COL_PRODUCT_FAVORITE='pro_fav';
 
 class Product{
   int id;
@@ -13,6 +14,7 @@ class Product{
   String category;
   String date;
   String imagePath;
+  bool isFavorite;
 
   Map<String,dynamic> toMap(){
     var map= <String,dynamic>{
@@ -21,10 +23,12 @@ class Product{
       COL_PRODUCT_CATEGORY: category,
       COL_PRODUCT_DATE: date,
       COL_PRODUCT_IMAGE: imagePath,
+      COL_PRODUCT_FAVORITE: isFavorite?1:0,
     };
     if(id != null){
       map[COL_PRODUCT_ID]=id;
     }
+
     return map;
   }
 
@@ -35,17 +39,16 @@ class Product{
     category=map[COL_PRODUCT_CATEGORY];
     date=map[COL_PRODUCT_DATE];
     imagePath=map[COL_PRODUCT_IMAGE];
+    isFavorite=map[COL_PRODUCT_FAVORITE] == 0 ? false : true;
 
   }
 
-  Product({this.name, this.price, this.category, this.date, this.imagePath});
+  Product({this.name, this.price, this.category, this.date, this.imagePath,this.isFavorite=false});
 
   @override
   String toString() {
-    return 'Product{id: $id, name: $name, price: $price, category: $category, date: $date, imagePath: $imagePath}';
+    return 'Product{id: $id, name: $name, price: $price, category: $category, date: $date, imagePath: $imagePath, isFavorite: $isFavorite}';
   }
-
-
 }
 
 

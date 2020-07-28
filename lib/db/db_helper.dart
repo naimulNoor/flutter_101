@@ -18,8 +18,13 @@ class DBSQLITE{
   static Future<Database> open() async{
     final root= await getDatabasesPath();
     final dbPath=Path.join(root,'product_db');
-    return  openDatabase(dbPath,version: 1, onCreate: (db,version) async {
+    return  openDatabase(dbPath,version: 3, onCreate: (db,version) async {
       await db.execute(CREATE_PRODUCT_PRODUCT);
+    },onUpgrade: (db,olVersion,NewVersion){
+      if(NewVersion==3){
+        db.execute('alter table $TABLE_PRODUCT add column $COL_PRODUCT_FAVORITE integer');
+
+      }
     });
   }
 
@@ -44,6 +49,11 @@ class DBSQLITE{
     final db=await open();
    return db.delete(TABLE_PRODUCT,where: '$COL_PRODUCT_ID=?',whereArgs: [id]);
 
+  }
+
+  static Future updateIsFav(int id,int value)async{
+    final db=await open();
+    db.update(TABLE_PRODUCT, {COL_PRODUCT_FAVORITE:value},where: '$COL_PRODUCT_ID=?',whereArgs: [id]);
   }
 
 
