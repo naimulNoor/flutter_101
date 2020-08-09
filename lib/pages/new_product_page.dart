@@ -116,7 +116,7 @@ class _NewProductPageState extends State<NewProductPage> {
                     child: imgPath == null ? Text("NO Image Set") : Image.file(
                         File(imgPath)),
                   ),
-                  FlatButton.icon(onPressed: _takePicture,
+                  FlatButton.icon(onPressed: _takeGalleryPicture,
                       icon: Icon(Icons.camera),
                       label: Text("Take a Photo"))
                 ],
