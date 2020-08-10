@@ -3,7 +3,9 @@ import 'dart:io';
 import 'package:awsome_app/db/db_helper.dart';
 import 'package:awsome_app/models/product_model.dart';
 import 'package:awsome_app/pages/product_details.dart';
+import 'package:awsome_app/providers/cart_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ProductItem extends StatefulWidget {
   final Product product;
@@ -16,6 +18,15 @@ class ProductItem extends StatefulWidget {
 }
 
 class _ProductItemState extends State<ProductItem> {
+
+  CartProvider provider;
+
+  @override
+  void didChangeDependencies() {
+   provider=Provider.of<CartProvider>(context);
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Dismissible(
@@ -75,12 +86,15 @@ class _ProductItemState extends State<ProductItem> {
                         });
                        },
                      ),
-                      IconButton(
+                      provider.cartItems.contains(widget.product)
+                          ? Icon(Icons.done)
+                          : IconButton(
                         icon: Icon(Icons.add_shopping_cart),
                         onPressed: (){
-
+                          provider.addToCart(widget.product);
                         },
                       )
+
                     ],
                   ),
                 )

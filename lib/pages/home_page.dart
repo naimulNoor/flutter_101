@@ -1,6 +1,7 @@
 import 'package:awsome_app/db/db_helper.dart';
 import 'package:awsome_app/models/product_model.dart';
 import 'package:awsome_app/pages/new_product_page.dart';
+import 'package:awsome_app/pages/shopping_cart.dart';
 import 'package:awsome_app/widget/product_itms.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -32,8 +33,21 @@ class _HomePageState extends State<HomePage> {
 
                 });
               }
+
               ),
-            )
+            ),
+            IconButton(
+              icon: Icon(Icons.shopping_cart),
+              onPressed: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>ShoppingCart()
+              )).then((_){
+                setState(() {
+
+                });
+              }
+
+              ),
+            ),
+
           ],
       ),
       body: FutureBuilder(
