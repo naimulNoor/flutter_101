@@ -1,5 +1,6 @@
 
 import 'package:awsome_app/pages/home_page.dart';
+import 'package:awsome_app/pages/lancher_page.dart';
 import 'package:awsome_app/providers/cart_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: HomePage(),
+        home: LauncherPage(),
       ),
     );
   }

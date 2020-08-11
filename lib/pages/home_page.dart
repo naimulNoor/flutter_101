@@ -1,5 +1,7 @@
 import 'package:awsome_app/db/db_helper.dart';
+import 'package:awsome_app/firebaseHelper/auth_helper.dart';
 import 'package:awsome_app/models/product_model.dart';
+import 'package:awsome_app/pages/login_page.dart';
 import 'package:awsome_app/pages/new_product_page.dart';
 import 'package:awsome_app/pages/shopping_cart.dart';
 import 'package:awsome_app/widget/product_itms.dart';
@@ -47,6 +49,19 @@ class _HomePageState extends State<HomePage> {
 
               ),
             ),
+            PopupMenuButton(
+              onSelected: (value){
+              if(value==1){
+                AuthenticaitonHelper.lgoout().then((value) => {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage())
+                )});
+              }
+            },
+            itemBuilder: (context)=>[
+              PopupMenuItem(child: Text('My Profile'),value: 0,),
+              PopupMenuItem(child: Text('Logout'),value: 1,)
+            ]
+    )
 
           ],
       ),

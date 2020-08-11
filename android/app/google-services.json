@@ -1,0 +1,226 @@
+{
+  "project_info": {
+    "project_number": "1042060278294",
+    "firebase_url": "https://penciltech-29b7b.firebaseio.com",
+    "project_id": "penciltech-29b7b",
+    "storage_bucket": "penciltech-29b7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042060278294:android:39fdc67cb0518e33451337",
+        "android_client_info": {
+          "package_name": "com.example.awsome_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMmxMRovGqq53OkvTt4mPhj5pbW74wgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042060278294:android:cdb47e3385f63b6c451337",
+        "android_client_info": {
+          "package_name": "com.penciltech.bloodbucket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042060278294-5c7kkvkuq0enoqli4ifcjn2404teba2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.penciltech.bloodbucket",
+            "certificate_hash": "7407b86e90e6b4feacf54f18624a7ba0a5c63555"
+          }
+        },
+        {
+          "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMmxMRovGqq53OkvTt4mPhj5pbW74wgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042060278294:android:c99d6e5d604a5f5c451337",
+        "android_client_info": {
+          "package_name": "com.penciltech.cholocitro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042060278294-kk4fvfpngulebmteh1b2h4uk98fbld0g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.penciltech.cholocitro",
+            "certificate_hash": "7407b86e90e6b4feacf54f18624a7ba0a5c63555"
+          }
+        },
+        {
+          "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMmxMRovGqq53OkvTt4mPhj5pbW74wgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042060278294:android:0ed216ca641d5c37451337",
+        "android_client_info": {
+          "package_name": "com.penciltech.kichcha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMmxMRovGqq53OkvTt4mPhj5pbW74wgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3878355693308760~7481712384"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042060278294:android:42b0097176b79d30451337",
+        "android_client_info": {
+          "package_name": "com.penciltech.mrkeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042060278294-hcamrgh2sahur9p1c9l5bmdp04jrbs4b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.penciltech.mrkeeper",
+            "certificate_hash": "b33c1014599a79f4131e74fb0d0b8fc42ac87fa3"
+          }
+        },
+        {
+          "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMmxMRovGqq53OkvTt4mPhj5pbW74wgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042060278294:android:8e4604464cb2790a451337",
+        "android_client_info": {
+          "package_name": "com.penciltech.pbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042060278294-cnraornlgbv2ri8dm7acvusj1p8h52qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.penciltech.pbook",
+            "certificate_hash": "10e775271e4d9d5deea4ce0dae336ffba8c0ebdb"
+          }
+        },
+        {
+          "client_id": "1042060278294-cjojaeig44plelg92hg8je2d37crl1jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.penciltech.pbook",
+            "certificate_hash": "7407b86e90e6b4feacf54f18624a7ba0a5c63555"
+          }
+        },
+        {
+          "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKMmxMRovGqq53OkvTt4mPhj5pbW74wgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042060278294-flohnt10ukad80nr54ri4h7ekg3uf51s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
